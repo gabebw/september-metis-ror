@@ -1,7 +1,7 @@
 class Card
-  def initialize(front, back)
-    @front = front
-    @back = back
+  def initialize(front_and_back)
+    @front = front_and_back[:front]
+    @back = front_and_back[:back]
   end
 
   def play

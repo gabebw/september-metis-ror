@@ -1,10 +1,9 @@
 class Deck
-
   attr_reader :name
 
-  def initialize(name, cards)
-    @name = name
-    @cards = cards
+  def initialize(name_and_cards)
+    @name = name_and_cards[:name]
+    @cards = name_and_cards[:cards]
   end
 
   def play
